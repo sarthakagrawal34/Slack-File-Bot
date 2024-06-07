@@ -22,11 +22,11 @@ func main() {
 		}
 
 		params := slack.FileUploadParameters{
-			Content:     string(fileContent),
-			Filename:    fileName,
-			Channels:    []string{channelID},
-			Filetype:    "auto",
-			Title:       fileName,
+			Content:        string(fileContent),
+			Filename:       fileName,
+			Channels:       []string{channelID},
+			Filetype:       "auto",
+			Title:          fileName,
 			InitialComment: "File uploaded by bot",
 		}
 
